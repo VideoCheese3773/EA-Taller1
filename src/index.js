@@ -18,8 +18,12 @@ function showAPI () {
         const cardStuff = this.document.createElement('h3');
         cardStuff.classList.add("cardStyle")
         cardInfo = `Name: ${e.name} Height: ${e.height}cm Weight: ${e.mass}Kg`
+        const cardButton = this.document.createElement('button');
+        cardButton.classList.add("buttonStyle")
+        cardButton.innerText='Add';
         console.log(cardInfo)
         cardStuff.append(cardInfo)
+        cardStuff.append(cardButton)
         cardHolder.appendChild(cardStuff)
     });
 }
