@@ -16,6 +16,7 @@ function showAPI () {
     let cardInfo = "";
     APIData.results.forEach(e => {
         const cardStuff = this.document.createElement('h3');
+        cardStuff.classList.add("cardStyle")
         cardInfo = `Name: ${e.name} Height: ${e.height}cm Weight: ${e.mass}Kg`
         console.log(cardInfo)
         cardStuff.append(cardInfo)
