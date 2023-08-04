@@ -1,4 +1,4 @@
-console.log("cyka blyat");
+console.log("Initializing API Fetch");
 
 let APIData = null;
 
@@ -12,6 +12,15 @@ async function loadAPI () {
 
 function showAPI () {
     console.log("loading data...")
+    let cardHolder = document.getElementById("cardHolder")
+    let cardInfo = "";
+    APIData.results.forEach(e => {
+        const cardStuff = this.document.createElement('h3');
+        cardInfo = `Name: ${e.name} Height: ${e.height}cm Weight: ${e.mass}Kg`
+        console.log(cardInfo)
+        cardStuff.append(cardInfo)
+        cardHolder.appendChild(cardStuff)
+    });
 }
 
 loadAPI()
