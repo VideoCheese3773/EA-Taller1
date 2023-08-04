@@ -1,0 +1,25 @@
+*{
+    font-family: century gothic;
+}
+
+body{
+    background-color: black;
+}
+
+.title{
+    text-align: center;
+    color: #FFE81F;
+}
+
+#cardHolder{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardStyle{
+    background-color: #FFE81F;
+    width: max-content;
+    padding: 1%;
+    border-radius: 50px;
+}
